@@ -51,7 +51,7 @@ def save_to_csv(title, comments):
     file_name = "comments.csv"
     with open(file_name, 'w', newline='', encoding='utf-8') as csv_file:
         csv_writer = csv.writer(csv_file)
-        csv_writer.writerows("Comment")
+        csv_writer.writerow(["Comment"])
         csv_writer.writerows([[comment] for comment in comments])
 
 
